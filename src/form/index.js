@@ -1,3 +1,4 @@
+import "./style.css";
 const Form = (props) => (
   <form className="form">
     <input className="form__input " autofocus required placeholder="Co jest do zrobienia ?" />
