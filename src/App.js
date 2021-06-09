@@ -1,4 +1,5 @@
-import Form from "./form";
+import Form from "./Form";
+import Tasks from "./Tasks";
 const tasks = [
   { id: 1, content: "przejść na React", done: false },
   { id: 2, content: "zjeść obiad", done: true },
@@ -18,7 +19,7 @@ function App() {
           <span className="section_buttonsCompleted"></span>
         </h2>
         <div className="section__content">
-          <ul className="tasks"></ul>
+          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
         </div>
       </section>
     </main>
