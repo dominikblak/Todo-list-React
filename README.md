@@ -1,8 +1,16 @@
-# Task list
+# 📋 Todo list in React.js
+
+---
+
+## 🚀 Demo
+
+[Todo-list-React](https://dominikblak.github.io/todo-list-react/)
+
+### ✏ Description
+
+To-do list - responsive to-do list with the ability to delete, add and hide tasks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Description
 
 ## Available Scripts
 
