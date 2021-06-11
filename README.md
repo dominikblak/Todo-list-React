@@ -9,6 +9,7 @@
 ### ✏ Description
 
 To-do list - responsive to-do list with the ability to delete, add and hide tasks
+<img src="https://github.com/dominikblak/todo-list-react/blob/master/public/Animation.gif" alt="demo_todo_list">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
