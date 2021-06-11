@@ -1,7 +1,7 @@
 import "./style.css";
-const Form = (props) => (
+const Form = () => (
   <form className="form">
-    <input className="form__input " autofocus required placeholder="Co jest do zrobienia ?" />
+    <input className="form__input " autoFocus required placeholder="Co jest do zrobienia ?" />
     <button className="form__button">Dodaj zadanie</button>
   </form>
 );
