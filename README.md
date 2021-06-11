@@ -34,6 +34,9 @@ How to reach me : </br>
 📧 bldominikak@gmail.com </br>
 👨‍💼 https://www.linkedin.com/in/dominik-blak-060416176/
 
+---
+
+
 #### React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
