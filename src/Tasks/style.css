@@ -26,7 +26,6 @@
 
 .task__button:hover {
   background-color: hsl(120, 100%, 35%);
-  transition: 1s;
 }
 
 .task__button:active {
