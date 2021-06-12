@@ -1,7 +1,6 @@
 .form {
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 20px;
 }
 
 .form__button {

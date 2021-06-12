@@ -1,6 +1,7 @@
 # 📋 Todo list in React.js
 
 ## 🚀 Demo
+
 [Todo-list-React](https://dominikblak.github.io/todo-list-react/)
 
 ### ✏ Description
@@ -33,6 +34,7 @@ How to reach me : </br>
 👨‍💼 https://www.linkedin.com/in/dominik-blak-060416176/
 
 ---
+
 #### 🗃 Environment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
