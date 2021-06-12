@@ -2,7 +2,7 @@
   background-color: white;
 }
 .section__content {
-  padding: 25px 15px 45px;
+  padding: 20px 15px 20px;
 }
 .section__header {
   display: grid;
@@ -10,6 +10,8 @@
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #eee;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 @media (max-width: 767px) {
   .section__header {
