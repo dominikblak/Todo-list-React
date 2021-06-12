@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  margin-bottom: 30px;
 
   border-bottom: 2px solid #e6e6e6;
 }
