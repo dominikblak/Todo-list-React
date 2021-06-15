@@ -18,13 +18,28 @@ function App() {
   const removeTask = (id) => {
     setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
+  const toggleTaskDone = (id) => {
+    setTasks((tasks) =>
+      tasks.map((task) => {
+        if (task.id === id) {
+          return {
+            ...tasks,
+            done: !task.done,
+          };
+        }
+        return task;
+      })
+    );
+  };
   return (
     <Container>
       <Header title="Lista zadań" />
       <Section title="Dodaj nowe zadanie" sectionContent={<Form />} />
       <Section
         title="Lista zadań"
-        sectionContent={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />}
+        sectionContent={
+          <Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} toggleTaskDone={toggleTaskDone} />
+        }
         extraHeaderContent={<Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} />}
       />
     </Container>
