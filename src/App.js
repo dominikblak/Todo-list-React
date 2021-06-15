@@ -23,7 +23,7 @@ function App() {
       tasks.map((task) => {
         if (task.id === id) {
           return {
-            ...tasks,
+            ...task,
             done: !task.done,
           };
         }
