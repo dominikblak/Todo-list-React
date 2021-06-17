@@ -2,7 +2,7 @@
   "name": "todo-list-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dominikblak.github.io/todo-list-react/",
+  "homepage": "https://dominikblak.github.io/Todo-list-React/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
