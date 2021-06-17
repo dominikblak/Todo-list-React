@@ -2,7 +2,7 @@
 
 ## 🚀 Demo
 
-[Todo-list-React](https://dominikblak.github.io/todo-list-react/)
+[Todo-list-React](https://dominikblak.github.io/Todo-list-React/)
 
 ### ✏ Description
 
