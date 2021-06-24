@@ -13,9 +13,11 @@ function App() {
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
   };
+
   const removeTask = (id) => {
     setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
+
   const toggleTaskDone = (id) => {
     setTasks((tasks) =>
       tasks.map((task) => {
@@ -29,6 +31,7 @@ function App() {
       })
     );
   };
+
   const setAllDone = () => {
     setTasks((tasks) =>
       tasks.map((task) => ({
@@ -37,6 +40,7 @@ function App() {
       }))
     );
   };
+
   const addNewTask = (newTaskConent) => {
     setTasks((tasks) => [
       ...tasks,
@@ -47,6 +51,7 @@ function App() {
       },
     ]);
   };
+
   return (
     <Container>
       <Header title="Lista zadań" />
