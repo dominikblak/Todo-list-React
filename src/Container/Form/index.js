@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css";
+
 const Form = ({ addNewTask }) => {
   const [newTaskConent, setNewTaskContent] = useState("");
   const onFormSubmit = (event) => {
