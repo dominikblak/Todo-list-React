@@ -9,6 +9,7 @@
   background-color: white;
   color: teal;
   cursor: pointer;
+  transition: 1s;
 }
 .buttons__button:disabled {
   color: grey;
