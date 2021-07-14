@@ -1,7 +1,8 @@
 import "./style.css";
+import { TasksList } from "./styled.js";
 
 const Tasks = (props) => (
-  <ul className="tasks">
+  <TasksList>
     {props.tasks.map((task) => (
       <li key={task.id} className={`tasks__list ${task.done && props.hideDone ? "tasks__list--hiden" : ""}`}>
         <button onClick={() => props.toggleTaskDone(task.id)} className="task__button">
@@ -13,7 +14,7 @@ const Tasks = (props) => (
         </button>
       </li>
     ))}
-  </ul>
+  </TasksList>
 );
 
 export default Tasks;
