@@ -1,10 +1,10 @@
 import "./style.css";
-import { TasksList } from "./styled.js";
+import { List, Item } from "./styled.js";
 
 const Tasks = (props) => (
-  <TasksList>
+  <List>
     {props.tasks.map((task) => (
-      <li key={task.id} className={`tasks__list ${task.done && props.hideDone ? "tasks__list--hiden" : ""}`}>
+      <Item key={task.id} hidden={task.done && props.hideDone}>
         <button onClick={() => props.toggleTaskDone(task.id)} className="task__button">
           {task.done ? "✔" : ""}
         </button>
@@ -12,9 +12,9 @@ const Tasks = (props) => (
         <button className=" task__button  task__button--remove" onClick={() => props.removeTask(task.id)}>
           🗑{" "}
         </button>
-      </li>
+      </Item>
     ))}
-  </TasksList>
+  </List>
 );
 
 export default Tasks;
