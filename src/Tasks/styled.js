@@ -15,3 +15,13 @@ export const Item = styled.li`
       display: none;
     `}
 `;
+export const Content = styled.span`
+  margin: 15px;
+  word-break: break-all;
+  flex-basis: 100%;
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `}
+`;
