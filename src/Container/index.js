@@ -1,5 +1,5 @@
-import "./style.css";
+import { Content } from "./styled.js";
 
-const Container = (props) => <main className="container">{props.children}</main>;
+const Container = (props) => <Content>{props.children}</Content>;
 
 export default Container;
