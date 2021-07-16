@@ -5,7 +5,6 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 
 function App() {
   const getInitialTasksFromLocalStorage = JSON.parse(localStorage.getItem("tasks")) || [];
