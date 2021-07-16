@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionButtons = styled.div`
+export const ButtonsSection = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 20px;
@@ -12,7 +12,7 @@ export const SectionButtons = styled.div`
     margin-top: 30px;
   }
 `;
-export const ToggleButtons = styled.button`
+export const ButtonsToggle = styled.button`
   border: none;
   background-color: white;
   color: teal;

@@ -1,7 +1,7 @@
-.form {
+/* .form {
   display: grid;
   grid-template-columns: 1fr auto;
-}
+} */
 
 .form__button {
   cursor: pointer;
