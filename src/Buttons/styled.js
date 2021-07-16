@@ -8,7 +8,7 @@ export const ButtonsSection = styled.div`
   @media (max-width: 767px) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 30px;
+    grid-auto-rows: 20px;
     margin-top: 30px;
   }
 `;

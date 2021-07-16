@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./style.css";
-import { FormSection } from "./styled";
+import { FormInput, FormSection, FormButton } from "./styled";
 
 const Form = ({ addNewTask }) => {
   const [newTaskConent, setNewTaskContent] = useState("");
@@ -17,15 +16,14 @@ const Form = ({ addNewTask }) => {
 
   return (
     <FormSection onSubmit={onFormSubmit}>
-      <input
+      <FormInput
         value={newTaskConent}
-        className="form__input "
         autoFocus
         required
         placeholder="Co jest do zrobienia ?"
         onChange={(event) => setNewTaskContent(event.target.value)}
       />
-      <button className="form__button">Dodaj zadanie</button>
+      <FormButton>Dodaj zadanie</FormButton>
     </FormSection>
   );
 };
