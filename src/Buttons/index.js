@@ -1,18 +1,17 @@
 import "./style.css";
+import { SectionButtons, ToggleButtons } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-  <div className="buttons">
+  <SectionButtons>
     {tasks.length > 0 && (
       <>
-        <button onClick={toggleHideDone} className="buttons__button">
-          {hideDone ? "Pokaż" : "Ukryj"} ukończone
-        </button>
-        <button onClick={setAllDone} className="buttons__button" disabled={tasks.every(({ done }) => done)}>
+        <ToggleButtons onClick={toggleHideDone}>{hideDone ? "Pokaż" : "Ukryj"} ukończone</ToggleButtons>
+        <ToggleButtons onClick={setAllDone} disabled={tasks.every(({ done }) => done)}>
           Ukończ wszytskie
-        </button>
+        </ToggleButtons>
       </>
     )}
-  </div>
+  </SectionButtons>
 );
 
 export default Buttons;
