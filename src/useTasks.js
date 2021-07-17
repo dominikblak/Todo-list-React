@@ -7,6 +7,7 @@ export const useTasks = () => {
   const removeTask = (id) => {
     setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
@@ -44,5 +45,6 @@ export const useTasks = () => {
       },
     ]);
   };
+
   return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
 };
