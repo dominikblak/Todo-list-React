@@ -23,10 +23,12 @@ To-do list
 - Create-react-app
 - Babel
 - Webpack
+- styled-components
 
 #### 📚 Methodology
 
-- BEM
+- Immutability
+- Custom hooks
 
 ##### 👨‍💻 Author
 
