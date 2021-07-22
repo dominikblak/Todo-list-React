@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FormSection = styled.form`
+export const Section = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   @media (max-width: 767px) {
@@ -8,11 +8,11 @@ export const FormSection = styled.form`
     grid-gap: 15px;
   }
 `;
-export const FormInput = styled.input`
+export const Input = styled.input`
   border: 2px solid #e6e6e6;
   padding: 10px;
 `;
-export const FormButton = styled.button`
+export const Button = styled.button`
   cursor: pointer;
   background-color: teal;
   color: white;

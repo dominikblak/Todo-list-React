@@ -1,16 +1,16 @@
-import { ButtonsSection, ButtonsToggle } from "./styled";
+import { Section, Toggle } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-  <ButtonsSection>
+  <Section>
     {tasks.length > 0 && (
       <>
-        <ButtonsToggle onClick={toggleHideDone}>{hideDone ? "Pokaż" : "Ukryj"} ukończone</ButtonsToggle>
-        <ButtonsToggle onClick={setAllDone} disabled={tasks.every(({ done }) => done)}>
+        <Toggle onClick={toggleHideDone}>{hideDone ? "Pokaż" : "Ukryj"} ukończone</Toggle>
+        <Toggle onClick={setAllDone} disabled={tasks.every(({ done }) => done)}>
           Ukończ wszytskie
-        </ButtonsToggle>
+        </Toggle>
       </>
     )}
-  </ButtonsSection>
+  </Section>
 );
 
 export default Buttons;

@@ -1,5 +1,5 @@
-import { MainHeader } from "./styled";
+import { Content } from "./styled";
 
-const Header = ({ title }) => <MainHeader>{title}</MainHeader>;
+const Header = ({ title }) => <Content>{title}</Content>;
 
 export default Header;
