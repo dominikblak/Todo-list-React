@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const SectionContent = styled.section`
+export const Content = styled.section`
   background-color: white;
 `;
-export const SectionDiv = styled.div`
+export const Div = styled.div`
   padding: 20px 15px 20px;
 `;
-export const SectionHeader = styled.h2`
+export const Header = styled.h2`
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
