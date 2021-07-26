@@ -5,7 +5,7 @@ export const Section = styled.div`
   grid-template-columns: auto auto;
   grid-gap: 20px;
   font-size: 16px;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 20px;
@@ -14,22 +14,22 @@ export const Section = styled.div`
 `;
 export const Toggle = styled.button`
   border: none;
-  background-color: white;
-  color: teal;
+  background-color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.teal};
   cursor: pointer;
   transition: 1s;
   &:disabled {
-    color: grey;
+    color: ${({ theme }) => theme.color.grey};
     cursor: default;
   }
   &:disabled:hover {
-    color: grey;
+    color: ${({ theme }) => theme.color.grey};
   }
   &:hover {
-    color: hsl(120, 100%, 35%);
+    filter: brightness(120%);
   }
   &:active {
-    color: hsl(120, 100%, 45%);
+    filter: brightness(140%);
     transition: none;
   }
 `;

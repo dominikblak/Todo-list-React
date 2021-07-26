@@ -2,10 +2,11 @@ import { useState, useRef } from "react";
 import { Input, Section, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
+  const inputRef = useRef(null);
   const [newTaskConent, setNewTaskContent] = useState("");
+
   const onFormSubmit = (event) => {
     event.preventDefault();
-    inputRef.current.focus();
     const contetTrimmed = newTaskConent.trim();
     if (!contetTrimmed) {
       return;
@@ -13,8 +14,9 @@ const Form = ({ addNewTask }) => {
 
     addNewTask(contetTrimmed);
     setNewTaskContent(" ");
+    inputRef.current.focus();
   };
-  const inputRef = useRef(null);
+
   return (
     <Section onSubmit={onFormSubmit}>
       <Input
