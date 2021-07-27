@@ -8,7 +8,7 @@ export const Item = styled.li`
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 2px solid ${({ theme }) => theme.color.mercury};
   ${({ hidden }) =>
     hidden &&
     css`
@@ -29,34 +29,33 @@ export const Button = styled.button`
   height: 30px;
   width: 30px;
   border: none;
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   transition: 1s;
   margin: 0 10px;
   cursor: pointer;
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: green;
+      background-color: ${({ theme }) => theme.color.green};
     `};
   &:hover {
-    background-color: hsl(120, 100%, 35%);
+    filter: brightness(150%);
   }
   &:active {
-    background-color: hsl(120, 100%, 45%);
+    filter: brightness(180%);
     transition: none;
   }
   ${({ remove }) =>
     remove &&
     css`
-      background-color: red;
-      transition: 1s;
-      &:hover {
-        background-color: hsl(0, 100%, 70%);
-        transition: 1s;
-      }
-      &:active {
-        background-color: hsl(0, 100%, 80%);
-        transition: none;
-      }
-    `}
+      background-color: ${({ theme }) => theme.color.red};
+    `};
+  &:hover {
+    filter: brightness(150%);
+    transition: 1s;
+  }
+  &:active {
+    filter: brightness(200%);
+    transition: none;
+  }
 `;
