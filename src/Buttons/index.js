@@ -1,7 +1,7 @@
-import { Section, Toggle } from "./styled";
+import { Wrapper, Toggle } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-  <Section>
+  <Wrapper>
     {tasks.length > 0 && (
       <>
         <Toggle onClick={toggleHideDone}>{hideDone ? "Pokaż" : "Ukryj"} ukończone</Toggle>
@@ -10,7 +10,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         </Toggle>
       </>
     )}
-  </Section>
+  </Wrapper>
 );
 
 export default Buttons;
