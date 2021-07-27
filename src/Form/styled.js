@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Section = styled.form`
+export const Wrapper = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {

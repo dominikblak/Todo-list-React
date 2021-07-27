@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.section`
+export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.white};
 `;
 export const Div = styled.div`
