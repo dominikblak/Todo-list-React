@@ -10,7 +10,9 @@ const Buttons = () => {
       {tasks.length > 0 && (
         <>
           <Toggle onClick={() => disptach(toggleHideDone())}>{hideDone ? "Pokaż" : "Ukryj"} ukończone</Toggle>
-          <Toggle onClick={() => disptach(setAllDone())}>Ukończ wszytskie</Toggle>
+          <Toggle onClick={() => disptach(setAllDone())} disabled={tasks.every(({ done }) => done)}>
+            Ukończ wszytskie
+          </Toggle>
         </>
       )}
     </Wrapper>
