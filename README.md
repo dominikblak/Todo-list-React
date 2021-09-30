@@ -16,18 +16,30 @@ To-do list
 #### 🧰 Technology
 
 - HTML
-- CSS (CSS Flex, CSS Grid)
-- JavaScript (ES6+ features)
-- GIT
-- React.js
-- Create-react-app
+- CSS
+- Styled-components
+- Grid
+- JavaScript
+- BEM
+- GithubPages
+- Media queries
+- Creat-react-app
+- React - Redux / Toolkit
+- Immutability / Immer
+- Axios
+- Async/await
 - Babel
-- Webpack
-- styled-components
+- WebPack
+- JSX
+- Hooks / customHooks
+- ThemeProvider
+- JSON
+ -LocalStorage
 
 #### 📚 Methodology
 
-- Immutability
+- Immutability / Immer
+- GIT
 - Custom hooks
 
 ##### 👨‍💻 Author
