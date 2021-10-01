@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { List, Item, Content, Button } from "./styled.js";
 import { selectTasks, toogleTaskDone, removeTask } from "../tasksSlice.js";
 
-const TasksList = () => {
+const TaskList = () => {
   const { tasks, hideDone } = useSelector(selectTasks);
   const dispatch = useDispatch();
   return (
@@ -23,4 +23,4 @@ const TasksList = () => {
   );
 };
 
-export default TasksList;
+export default TaskList;
