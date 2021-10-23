@@ -5,10 +5,14 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
+import { useLocation } from "react-router";
 
 function TasksPage() {
+  const location = useLocation();
+
   return (
     <Container>
+      {location.search}
       <Header title="Lista zadań" />
       <Section title="Dodaj nowe zadanie" sectionContent={<Form />} />
       <Section title="Lista zadań" sectionContent={<TaskList />} extraHeaderContent={<Buttons />} />
