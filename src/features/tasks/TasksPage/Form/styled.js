@@ -8,10 +8,7 @@ export const Wrapper = styled.form`
     grid-gap: 15px;
   }
 `;
-export const Input = styled.input`
-  border: 2px solid ${({ theme }) => theme.color.mercury};
-  padding: 10px;
-`;
+
 export const Button = styled.button`
   cursor: pointer;
   background-color: ${({ theme }) => theme.color.teal};
