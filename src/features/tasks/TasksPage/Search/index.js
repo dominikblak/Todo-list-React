@@ -1,20 +1,26 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router";
 import Input from "../../Input";
+import { Wrapper } from "./styled";
+import searchQueryParamName from "./searchQueryParamName";
 
 const Search = () => {
   const location = useLocation();
   const history = useHistory();
-  const query = new URLSearchParams(location.search).get("szukaj");
+  const query = new URLSearchParams(location.search).get(searchQueryParamName);
   const OnInputChange = ({ target }) => {
     const searchParams = new URLSearchParams(location.search);
     if (target.value.trim() === "") {
-      searchParams.delete("szukaj");
+      searchParams.delete(searchQueryParamName);
     } else {
-      searchParams.set("szukaj", target.value);
+      searchParams.set(searchQueryParamName, target.value);
     }
     history.push(`${location.pathname}?${searchParams.toString()}`);
   };
-  return <Input placeholder="Filtruj zadania" value={query || ""} onChange={OnInputChange} />;
+  return (
+    <Wrapper>
+      <Input placeholder="Filtruj zadania" value={query || ""} onChange={OnInputChange} />
+    </Wrapper>
+  );
 };
 export default Search;
