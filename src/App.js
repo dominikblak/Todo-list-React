@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Link, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, NavLink, Switch, Route, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
@@ -9,10 +9,14 @@ export const App = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/zadania">Zadania</Link>
+          <NavLink activeClassName="active" to="/zadania">
+            Zadania
+          </NavLink>
         </li>
         <li>
-          <Link to="/autor">O autorze</Link>
+          <NavLink activeClassName="active" to="/autor">
+            O autorze
+          </NavLink>
         </li>
       </ul>
       <Switch>
