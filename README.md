@@ -24,6 +24,7 @@ To-do list
 - Media queries
 - Creat-react-app
 - React - Redux / Toolkit
+- Redux Saga
 - Immutability / Immer
 - Axios
 - Async/await
@@ -39,7 +40,7 @@ To-do list
 
 - Immutability / Immer
 - GIT
-- Custom hooks
+
 
 ##### 👨‍💻 Author
 
