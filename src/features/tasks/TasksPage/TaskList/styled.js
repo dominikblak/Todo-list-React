@@ -17,7 +17,7 @@ export const Item = styled.li`
 `;
 export const Content = styled.span`
   margin: 15px;
-  word-break: break-all;
+  word-break: break-word;
   flex-basis: 100%;
   ${({ done }) =>
     done &&
