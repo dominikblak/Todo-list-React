@@ -10,8 +10,18 @@ To-do list
 - responsive to-do list with the ability to delete, add, hide, search and download tasks,
 </br>
 
-### ℹ Instruction
+
 <img src="https://github.com/dominikblak/todo-list-react/blob/master/public/Animation.gif" alt="demo_todo_list">
+
+### ℹ Instruction
+1. Enter the content of the task you want to add in the "Co jest to zrobienia" field,
+2. Then using the "Dodaj zadanie" button will add a task and save it to the cache.
+3. Green button next to the task content - it is used to complete the task.
+4. Red button next to the task content - it is used to delete the task.
+5. "Ukryj ukończone" button - it is used to hide completed tasks from the list.
+6. "Ukończ wszytskie" button - is used to complete all tasks on the list.
+7. "Pobierz przykładowe zadania" button is used to download sample tasks from the cache. The example tasks replace the current task list.
+8. "Filtruj zadania" field - it is used to filter tasks on the list.
 
 #### 🧰 Technology
 
