@@ -5,8 +5,10 @@ const activeClassName = "active";
 export const StyledNavLink = styled(NavLink).attrs(() => ({
   activeClassName,
 }))`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.white};
   &.active {
-    color: red;
+    font-weight: ${({ theme }) => theme.weight.medium};
   }
 `;
 export const StyledLink = styled(Link)`
