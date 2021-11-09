@@ -1,11 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.white};
 `;
 export const Div = styled.div`
   padding: 20px 15px 20px;
+  ${(props) =>
+    props.author &&
+    css`
+      line-height: 1.5;
+    `}
 `;
+
 export const Header = styled.h2`
   display: grid;
   grid-template-columns: 1fr auto;
