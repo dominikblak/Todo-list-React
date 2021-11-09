@@ -10,6 +10,7 @@ To-do list
 - responsive to-do list with the ability to delete, add, hide, search and download tasks,
 </br>
 
+### ℹ Insruction
 <img src="https://github.com/dominikblak/todo-list-react/blob/master/public/Animation.gif" alt="demo_todo_list">
 
 #### 🧰 Technology
