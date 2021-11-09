@@ -1,13 +1,14 @@
 import { StyledNavLink } from "../../styled";
+import { Ul, Li } from "./styled";
 
 export const Navigation = () => {
   return (
     <Ul>
       <Li>
-        <StyledNavLink>Zadania</StyledNavLink>
+        <StyledNavLink to="/zadania">Zadania</StyledNavLink>
       </Li>
       <Li>
-        <StyledNavLink>O autorze</StyledNavLink>
+        <StyledNavLink to="/autor">O autorze</StyledNavLink>
       </Li>
     </Ul>
   );
