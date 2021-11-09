@@ -1,9 +1,9 @@
 import React from "react";
 import { toogleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../../tasksSlice";
-import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { List, Item, Content, Button } from "./styled.js";
 import { useLocation } from "react-router";
+import { StyledLink } from "../../../../styled";
 import searchQueryParamName from "../Search/searchQueryParamName.js";
 
 const TaskList = () => {
@@ -21,7 +21,7 @@ const TaskList = () => {
             {task.done ? "✔" : ""}
           </Button>
           <Content done={task.done}>
-            <Link to={`zadania/${task.id}`}>{task.content}</Link>
+            <StyledLink to={`zadania/${task.id}`}>{task.content}</StyledLink>
           </Content>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑{" "}
