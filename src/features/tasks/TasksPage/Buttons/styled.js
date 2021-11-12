@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 20px;
+    grid-gap: 20px;
     margin-top: 30px;
   }
 `;
