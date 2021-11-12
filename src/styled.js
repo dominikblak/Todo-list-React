@@ -17,8 +17,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     border-bottom: 1px solid;
     filter: brightness(120%);
   }
-  &.disabled {
-  }
 `;
 export const StyledLink = styled(Link)`
   text-decoration: none;
