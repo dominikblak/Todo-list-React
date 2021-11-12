@@ -6,14 +6,20 @@
 
 ### ✏ Description
 
-To-do list
 
+
+To-do list 
 - responsive to-do list with the ability to delete, add, hide, search and download tasks,
-  </br>
+</br>
+
+
 
 <img src="https://github.com/dominikblak/todo-list-react/blob/master/public/Animation.gif" alt="demo_todo_list">
 
 ### ℹ Instruction
+
+
+=======
 
 1. Enter the content of the task you want to add in the "Co jest to zrobienia" field,
 2. Then using the "Dodaj zadanie" button will add a task and save it to the cache.
@@ -46,12 +52,18 @@ To-do list
 - Hooks / customHooks
 - ThemeProvider
 - JSON
-  -LocalStorage
+-LocalStorage
+=======
+
 
 #### 📚 Methodology
 
 - Immutability / Immer
 - GIT
+
+=======
+
+
 
 ##### 👨‍💻 Author
 
