@@ -21,4 +21,15 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.color.teal};
+
+  &:disabled:hover {
+    color: ${({ theme }) => theme.color.grey};
+  }
+  &:hover {
+    filter: brightness(120%);
+  }
+  &:active {
+    filter: brightness(140%);
+    transition: none;
+  }
 `;
