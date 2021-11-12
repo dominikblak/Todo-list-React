@@ -19,7 +19,7 @@ To-do list
 ### ℹ Instruction
 
 
-=======
+
 
 1. Enter the content of the task you want to add in the "Co jest to zrobienia" field,
 2. Then using the "Dodaj zadanie" button will add a task and save it to the cache.
@@ -53,15 +53,13 @@ To-do list
 - ThemeProvider
 - JSON
 -LocalStorage
-=======
+
 
 
 #### 📚 Methodology
 
 - Immutability / Immer
 - GIT
-
-=======
 
 
 
