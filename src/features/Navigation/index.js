@@ -1,5 +1,4 @@
-import { StyledNavLink } from "../../styled";
-import { Ul, Li } from "./styled";
+import { StyledNavLink, Ul, Li } from "./styled";
 import { toAuthor, toTasks } from "./../../routes";
 
 export const Navigation = () => {
