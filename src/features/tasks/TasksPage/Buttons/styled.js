@@ -20,7 +20,7 @@ export const Toggle = styled.button`
   cursor: pointer;
   transition: 1s;
   &:disabled {
-    color: ${({ theme }) => theme.color.green};
+    color: ${({ theme }) => theme.color.grey};
     cursor: default;
   }
   &:disabled:hover {
