@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
 import { addTask } from "../../tasksSlice";
 import { Wrapper, Button } from "./styled";
-import { nanoid } from "@reduxjs/toolkit";
 import Input from "../../Input";
 
 const Form = () => {
@@ -36,7 +36,7 @@ const Form = () => {
         value={newTaskConent}
         autoFocus
         required
-        placeholder="Co jest do zrobienia ?"
+        placeholder="Co jest do zrobienia?"
         onChange={(event) => setNewTaskContent(event.target.value)}
       />
       <Button>Dodaj zadanie</Button>
