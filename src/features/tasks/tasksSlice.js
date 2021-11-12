@@ -6,7 +6,7 @@ const tasksSlice = createSlice({
   initialState: {
     tasks: getTasksFromLocalStorage(),
     hideDone: false,
-    // loading: false,
+    loading: false,
   },
   reducers: {
     addTask: ({ tasks }, { payload: newTask }) => {

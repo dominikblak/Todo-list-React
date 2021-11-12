@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 20px;
+    grid-gap: 20px;
     margin-top: 30px;
   }
 `;
@@ -19,7 +20,7 @@ export const Toggle = styled.button`
   cursor: pointer;
   transition: 1s;
   &:disabled {
-    color: ${({ theme }) => theme.color.green};
+    color: ${({ theme }) => theme.color.grey};
     cursor: default;
   }
   &:disabled:hover {
