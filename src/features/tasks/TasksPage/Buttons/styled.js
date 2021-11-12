@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 20px;
   font-size: 16px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
@@ -14,6 +13,7 @@ export const Wrapper = styled.div`
 `;
 export const Toggle = styled.button`
   border: none;
+  margin: 10px;
   background-color: ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.teal};
   cursor: pointer;
