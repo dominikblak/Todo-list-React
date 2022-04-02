@@ -3,7 +3,6 @@ import { toogleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "
 import { useSelector, useDispatch } from "react-redux";
 import { List, Item, Content, Button, StyledLink } from "./styled.js";
 import { useLocation } from "react-router";
-import {} from "../../../navigation/styled";
 import searchQueryParamName from "../Search/searchQueryParamName.js";
 import { toTask } from "../../../../routes";
 
